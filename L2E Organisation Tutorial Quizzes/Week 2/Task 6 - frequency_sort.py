@@ -6,7 +6,7 @@ def frequency_sort(items):
         else:
             hold[num] += 1
 
-    sorted_by_key = sorted(hold.items(), key = lambda x: x[0])
+    sorted_by_key = sorted(hold.items())
     sorted_dict = {}
 
     for key, value in sorted_by_key:
@@ -20,3 +20,5 @@ def frequency_sort(items):
         res.extend(holder)
 
     return res
+
+print(frequency_sort([1, 2, 7, 3, 5, 3, 2, 4, 4, 1, 1, 7]))
