@@ -66,3 +66,8 @@ def has_duplicate_c(items):
 # is O(n), now because of my choice of implementing the second function, I'm trading off the
 # auxillary space complexity of O(n) for O(1) which is worth it when you consider the amount of
 # items the list has as well as how fast the function is supposed to run for.
+
+
+string = "tftyfyugyutftrdA"
+
+print(any(x.isupper() for x in string))
