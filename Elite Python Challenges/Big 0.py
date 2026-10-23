@@ -64,10 +64,5 @@ def has_duplicate_c(items):
 # of time complexity.
 # In terms of Space Complexity, the first implementation is O(1) while the second and third
 # is O(n), now because of my choice of implementing the second function, I'm trading off the
-# auxillary space complexity of O(n) for O(1) which is worth it when you consider the amount of
+# auxillary space complexity of O(1) for O(n) which is worth it when you consider the amount of
 # items the list has as well as how fast the function is supposed to run for.
-
-
-string = "tftyfyugyutftrdA"
-
-print(any(x.isupper() for x in string))
