@@ -19,9 +19,16 @@ def apply_pipeline(data: list[int], operations: list[callable]) -> list[int]:
     Applies a sequence of functional operations to each element in data.
     """
     # TODO: Pipe each element through operations list
+    # result = []
+    # for i in data:
+    #     start = operations[0](i)
+    #     end = operations[1](start)
+    #     result.append(end)
+    # return result
     result = []
     for i in data:
-        start = operations[0](i)
-        end = operations[1](start)
-        result.append(end)
+        for j in operations:
+            i = j(i)
+        result.append(i)
     return result
+
