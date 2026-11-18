@@ -35,3 +35,6 @@ def countdown_sum(n: int) -> int:
         return countdown_sum(n-1)
     else:
         return n + countdown_sum(n-1)
+        # return n + countdown_sum(n-2)
+
+print(countdown_sum(5))

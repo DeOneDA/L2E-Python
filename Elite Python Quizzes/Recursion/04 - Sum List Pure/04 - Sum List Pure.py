@@ -29,6 +29,3 @@ def sum_list(numbers: list[int | float], index: int = 0) -> int | float:
         num = index
         index += 1
         return numbers[num] + sum_list(numbers, index)
-    
-
-print(sum_list([10, -5, 2]))
