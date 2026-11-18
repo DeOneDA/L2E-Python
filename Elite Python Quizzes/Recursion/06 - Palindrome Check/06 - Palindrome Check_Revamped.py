@@ -23,7 +23,9 @@ def is_palindrome(text: str, left: int = 0, right: int | None = None) -> bool:
     if type(text) != str: raise TypeError
     if len(text) == 0: return True
     right = len(text)-1-left
-    text = text.lower()
-    if left >= right: return True
-    if text[left] != text[right]: return False
-    return is_palindrome(text, left + 1, right - 1)
+    # if left >= right: return True
+    # if text[left] != text[right]: return False
+    # return is_palindrome(text, left + 1, right - 1)
+    return False if text[left] != text[right] else True if left >= right else is_palindrome(text, left + 1, right - 1)
+
+print(is_palindrome("racecar"))
