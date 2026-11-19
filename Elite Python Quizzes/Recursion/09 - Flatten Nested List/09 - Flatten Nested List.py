@@ -29,3 +29,5 @@ def flatten(nested: list, index: int = 0) -> list:
         return [nested[index]] + flatten(nested[1:], index)
 
     return flatten(nested[0], index) + flatten(nested[1:], index)
+
+    # return [nested[index]] + flatten(nested[1:], index) if type(nested[0]) != list else flatten(nested[0], index) + flatten(nested[1:], index)
