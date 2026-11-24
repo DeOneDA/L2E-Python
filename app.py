@@ -7,11 +7,11 @@ root.geometry("500x340")
 
 def calculate_tip(bill, tip_percent):
     if tip_percent == 0: return bill
-    return bill / tip_percent
+    return (bill * tip_percent) / 100
 
 def total_with_tip(bill, tip_percent):
     if tip_percent == 0: return bill
-    return (bill/tip_percent) + bill
+    return ((bill * tip_percent) / 100) + bill
 
 def split_bill(total, people):
     if people < 1: return "None"
