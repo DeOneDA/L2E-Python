@@ -1029,7 +1029,7 @@ def operator():
       for letter, text in bank[question]["choices"]:
         if letter == user_choice:
            wrong_choices[question] = ((letter,text), bank[question]["correct"])
-   if total == 5:
+   if total == 10:
     if wrong_choices:
         root.geometry("720x650")
         question_label.config(text=f"{get_feedback(user, total)}")
@@ -1057,7 +1057,7 @@ def operator():
        radiobutton.config(text=f"{new_option[0]}. {new_option[1]}", value=new_option[0])
        
       
-title_label = tk.Label(root, text="Nigerian Food Trivia.", font=("Arial", 15))
+title_label = tk.Label(root, text="Nigerian Food Trivia.", font=("Arial", 25))
 title_label.pack(pady=5)
 
 question = rand.choice(list(bank.keys()))
